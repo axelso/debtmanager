@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Debtor from './components/Debtor';
+import Header from './components/Header'
 
 import './App.css';
 
@@ -8,8 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>The App Component</h1>
-				<Debtor />
-				<Debtor />
+				<Header />
 				<Debtor />
       </div>
     );
