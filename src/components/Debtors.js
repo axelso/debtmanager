@@ -30,14 +30,14 @@ class Debtors extends Component {
     const { debtors } = this.state;
 
 		return (
-			<div>
+			<React.Fragment>
 		    {debtors.map(debtor => (
           <Debtor 
             key={debtor.id}
             debtor={debtor} 
           />
         ))}		
-			</div>
+			</React.Fragment>
 		);
 	}
 }

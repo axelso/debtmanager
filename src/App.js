@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Debtor from './components/Debtor';
 import Header from './components/Header';
 import Debtors from './components/Debtors';
 
