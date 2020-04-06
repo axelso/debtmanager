@@ -8,9 +8,11 @@ class Debtor extends Component {
 
   onShowClick = e => {
     this.setState({showDebtorInfo: !this.state.showDebtorInfo});
-    // console.log(this.state);    
   }
 
+  onDeleteClick = () => {
+    this.props.deleteClickHandler();
+  }
 
   render() {
 		const { name, email, phone } = this.props.debtor;
@@ -18,7 +20,11 @@ class Debtor extends Component {
 
     return (
       <div className="card card-body mb-3">
-        <h4>{name} <i onClick={this.onShowClick} className="fas fa-sort-down" /> </h4>
+        <h4>{name} 
+          <i onClick={this.onShowClick} className="fas fa-sort-down" style={{cursor: 'pointer'}} /> 
+          <i onClick={this.onDeleteClick} className="fas fa-times" 
+            style={{cursor: 'pointer', float: 'right', color: 'red'}} />
+        </h4>
         {showDebtorInfo ? (
           <ul className="list-group">
             <li className="list-group-item">Email: {email}</li>
@@ -31,7 +37,8 @@ class Debtor extends Component {
 }
 
 Debtor.propTypes = {
-	debtor: PropTypes.object.isRequired
+	debtor: PropTypes.object.isRequired,
+  deleteClickHandler: PropTypes.func.isRequired
 }
 
 export default Debtor;

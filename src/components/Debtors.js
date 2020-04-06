@@ -26,6 +26,15 @@ class Debtors extends Component {
     ]
   }
 
+  deleteDebtor = id => {
+    const { debtors } = this.state;
+    const newDebtors = debtors.filter(debtor => debtor.id !== id);
+    this.setState({
+      debtors: newDebtors,
+    })
+    console.log(newDebtors);
+  }
+
 	render() {
     const { debtors } = this.state;
 
@@ -35,6 +44,7 @@ class Debtors extends Component {
           <Debtor 
             key={debtor.id}
             debtor={debtor} 
+            deleteClickHandler={this.deleteDebtor.bind(this, debtor.id)}
           />
         ))}		
 			</React.Fragment>
