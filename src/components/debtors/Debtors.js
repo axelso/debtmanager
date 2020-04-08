@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import Debtor from './debtors/Debtor';
-import { Consumer } from './../context';
+import Debtor from './Debtor';
+import { Consumer } from '../../context';
 
 class Debtors extends Component {
   

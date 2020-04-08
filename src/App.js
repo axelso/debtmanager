@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import Header from './components/Header';
-import Debtors from './components/Debtors';
+import Header from './components/layout/Header';
+import Debtors from './components/debtors/Debtors';
+import AddDebtor from './components/debtors/AddDebtor';
 
 import { Provider } from './context';
 
@@ -14,6 +15,7 @@ class App extends Component {
         <div className="App">
           <Header branding="Debtor Manager" />
           <div className="container">
+            <AddDebtor />
             <Debtors />
           </div>
         </div>
