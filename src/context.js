@@ -9,6 +9,11 @@ const reducer = (state, action) => {
         ...state, 
         debtors: state.debtors.filter(debtor => debtor.id !== action.payload)
       }; 
+    case 'ADD_DEBTOR':
+      return {
+        ...state, 
+        debtors: [action.payload, ...state.debtors]
+      };
     default:
       return state;
   }
