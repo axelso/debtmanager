@@ -11,6 +11,11 @@ class Debtors extends Component {
           const { debtors } = value;
           return (
             <React.Fragment>
+              <h1 className="display-4 mb-2">
+                <span className="text-danger">
+                  Debtor List
+                </span>
+              </h1>
               {debtors.map(debtor => (
                 <Debtor 
                   key={debtor.id}
