@@ -13,7 +13,7 @@ class AddDebtor extends Component {
   }  
   
   onChange = e => this.setState({ [e.target.name]: e.target.value });    
-  onSubmit = (dispatch, e) => {
+  onSubmit = async (dispatch, e) => {
     e.preventDefault();
 
     const { name, email, phone } = this.state;
@@ -53,8 +53,8 @@ class AddDebtor extends Component {
       phone
     };
 
-    axios.post('https://jsonplaceholder.typicode.com/users/', newDebtor)
-      .then(response => dispatch({type: 'ADD_DEBTOR', payload: response.data}));
+    const response = await axios.post('https://jsonplaceholder.typicode.com/users/', newDebtor);
+    dispatch({type: 'ADD_DEBTOR', payload: response.data});
 
     //Clear State
     this.setState({

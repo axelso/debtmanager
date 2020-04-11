@@ -12,9 +12,9 @@ class Debtor extends Component {
     this.setState({showDebtorInfo: !this.state.showDebtorInfo});
   }
 
-  onDeleteClick = (id, dispatch) => {
-    axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`)
-      .then(response => dispatch({type: 'DELETE_DEBTOR', payload: id}));
+  onDeleteClick = async (id, dispatch) => {
+    await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+    dispatch({type: 'DELETE_DEBTOR', payload: id});
   }
 
   render() {
