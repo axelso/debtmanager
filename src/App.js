@@ -4,6 +4,7 @@ import Header from "./components/layout/Header";
 import About from './components/pages/About';
 import Debtors from "./components/debtors/Debtors";
 import AddDebtor from "./components/debtors/AddDebtor";
+import EditDebtor from './components/debtors/EditDebtor';
 
 import { Provider } from "./context";
 
@@ -22,6 +23,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Debtors} /> 
                 <Route exact path="/debtor/add" component={AddDebtor} />
+                <Route exact path="/debtor/edit/:id" component={EditDebtor} />
                 <Route exact path="/about" component={About} />
                 <Route component={NotFound} />
               </Switch>

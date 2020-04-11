@@ -15,6 +15,14 @@ const reducer = (state, action) => {
         ...state, 
         debtors: [action.payload, ...state.debtors]
       };
+    case 'UPDATE_DEBTOR':
+      return {
+        ...state, 
+        debtors: state.debtors.map(
+          debtor => 
+            debtor.id === action.payload.id ? (debtor = action.payload) : debtor
+        )
+      };
     default:
       return state;
   }
