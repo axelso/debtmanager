@@ -53,6 +53,17 @@ class AddDebtor extends Component {
     };
 
     dispatch({type: 'ADD_DEBTOR', payload: newDebtor});
+
+    //Clear State
+    this.setState({
+      name: '',
+      email: '',
+      phone: '',
+      errors: {}
+    });
+
+    this.props.history.push('/');
+
   }
 
   render() {
