@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import axios from 'axios';
 import { Consumer } from '../../context';
 import { v4 as uuidv4 } from 'uuid';
 import TextInputGroup from '../layout/TextInputGroup';
@@ -52,7 +53,8 @@ class AddDebtor extends Component {
       phone
     };
 
-    dispatch({type: 'ADD_DEBTOR', payload: newDebtor});
+    axios.post('https://jsonplaceholder.typicode.com/users/', newDebtor)
+      .then(response => dispatch({type: 'ADD_DEBTOR', payload: response.data}));
 
     //Clear State
     this.setState({

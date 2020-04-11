@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import axios from 'axios';
 import PropTypes from 'prop-types';
 import { Consumer } from '../../context';
 
@@ -12,7 +13,8 @@ class Debtor extends Component {
   }
 
   onDeleteClick = (id, dispatch) => {
-    dispatch({type: 'DELETE_DEBTOR', payload: id})
+    axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then(response => dispatch({type: 'DELETE_DEBTOR', payload: id}));
   }
 
   render() {
