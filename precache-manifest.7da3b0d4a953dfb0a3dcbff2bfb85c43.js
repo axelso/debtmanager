@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a84f346cbe4a384b87d406dd30e810a6",
+    "revision": "cc18ccdb6464a2139d4b3f816f8ceea6",
     "url": "/debtmanager/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/debtmanager/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "37c716125b8a4682a439",
+    "revision": "38c560c0b3504fec965b",
     "url": "/debtmanager/static/css/main.65938976.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/debtmanager/static/js/2.85840541.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37c716125b8a4682a439",
-    "url": "/debtmanager/static/js/main.fe89ddc8.chunk.js"
+    "revision": "38c560c0b3504fec965b",
+    "url": "/debtmanager/static/js/main.dce7669c.chunk.js"
   },
   {
     "revision": "50b7762224ba9e1e3cab",

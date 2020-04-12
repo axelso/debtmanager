@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/debtmanager/static/css/main.65938976.chunk.css",
-    "main.js": "/debtmanager/static/js/main.fe89ddc8.chunk.js",
-    "main.js.map": "/debtmanager/static/js/main.fe89ddc8.chunk.js.map",
+    "main.js": "/debtmanager/static/js/main.dce7669c.chunk.js",
+    "main.js.map": "/debtmanager/static/js/main.dce7669c.chunk.js.map",
     "runtime-main.js": "/debtmanager/static/js/runtime-main.a5778876.js",
     "runtime-main.js.map": "/debtmanager/static/js/runtime-main.a5778876.js.map",
     "static/css/2.de424728.chunk.css": "/debtmanager/static/css/2.de424728.chunk.css",
     "static/js/2.85840541.chunk.js": "/debtmanager/static/js/2.85840541.chunk.js",
     "static/js/2.85840541.chunk.js.map": "/debtmanager/static/js/2.85840541.chunk.js.map",
     "index.html": "/debtmanager/index.html",
-    "precache-manifest.5505ee0cf30244e26a046e0f7d97ed87.js": "/debtmanager/precache-manifest.5505ee0cf30244e26a046e0f7d97ed87.js",
+    "precache-manifest.7da3b0d4a953dfb0a3dcbff2bfb85c43.js": "/debtmanager/precache-manifest.7da3b0d4a953dfb0a3dcbff2bfb85c43.js",
     "service-worker.js": "/debtmanager/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/debtmanager/static/css/2.de424728.chunk.css.map",
     "static/css/main.65938976.chunk.css.map": "/debtmanager/static/css/main.65938976.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.85840541.chunk.js",
     "static/css/main.65938976.chunk.css",
-    "static/js/main.fe89ddc8.chunk.js"
+    "static/js/main.dce7669c.chunk.js"
   ]
 }
