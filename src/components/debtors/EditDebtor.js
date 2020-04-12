@@ -61,8 +61,10 @@ class EditDebtor extends Component {
       phone
     };
 
+    const { id } = this.props.match.params;
+
     const response = 
-      await axios.put(`https://jsonplaceholder.typicode.com/users/${1}`, 
+      await axios.put(`https://jsonplaceholder.typicode.com/users/${id}`,
           updatedDebtor);
 
     dispatch({type: 'UPDATE_DEBTOR', payload: response.data})
